@@ -1,0 +1,19 @@
+{
+  "name": "mkrauthomf.github.io",
+  "version": "1.0.0",
+  "description": "Projet Ohmyfood d'un site web mobile",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ginzoh/mkrauthomf.github.io.git"
+  },
+  "author": "KRAUTH Mickael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ginzoh/mkrauthomf.github.io/issues"
+  },
+  "homepage": "https://github.com/Ginzoh/mkrauthomf.github.io#readme"
+}

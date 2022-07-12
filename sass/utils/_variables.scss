@@ -1,0 +1,13 @@
+//Variables
+
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary_color: #99e2d0;
+
+//Mixin
+
+@mixin my_hover() {
+  .choix {
+    color: black;
+  }
+}
