@@ -40,9 +40,11 @@
   width: 100%;
   box-shadow: 5px 5px 7px #e9e9e9;
 
-  .fa-placing {
-    bottom: 18px;
-    left: 11.5%;
+  @media (min-width: 950px) {
+    .fa-placing {
+      bottom: 18px;
+      left: 11.5%;
+    }
   }
 
   &:hover {
