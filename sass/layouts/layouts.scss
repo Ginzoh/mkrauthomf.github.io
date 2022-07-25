@@ -1,13 +1,12 @@
+@import "../utils/variables";
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 10px;
-  font-family: Shrikhand;
-  font-weight: 500;
+  @include title;
 }
 
 .footer {
@@ -28,6 +27,7 @@ footer h1 {
 
 footer ul {
   display: inline-block;
+  list-style-type: none;
   li {
     margin-bottom: 5px;
     font-size: 16px;

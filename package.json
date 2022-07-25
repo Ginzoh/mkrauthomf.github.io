@@ -4,7 +4,8 @@
   "description": "Projet Ohmyfood d'un site web mobile",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "sass2": "sass --watch ./sass/main-menu.scss:./css/style-menu.css"
   },
   "repository": {
     "type": "git",

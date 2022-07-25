@@ -4,5 +4,16 @@ $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary_color: #99e2d0;
 $shadow: #e9e9e9;
+$back: #f6f6f6;
 
 //Mixin
+
+@mixin title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: Shrikhand;
+  font-weight: 500;
+}
+
+@mixin button-hover($top, $bottom) {
+}
