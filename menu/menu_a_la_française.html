@@ -22,7 +22,7 @@
   <body class="container">
     <header>
       <h1>ohmyfood</h1>
-      <i class="fa-solid fa-arrow-left"></i>
+      <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
     </header>
     <main>
       <img
@@ -34,44 +34,137 @@
           <h2>À la française</h2>
           <i class="fa-regular fa-heart"></i>
         </div>
-        <section>
-          <h3 class="title-item">ENTRÉES</h3>
-          <div class="plat-flex">
-            <div class="plat-item">
-              <div>
-                <p class="first">Tartare de poulpe acidulé</p>
-                <p class="second">Aux zests d'orange</p>
+        <div class="tab-flex">
+          <section class="sec-1">
+            <h3 class="title-item">ENTRÉES</h3>
+            <div class="plat-flex">
+              <div class="plat-item fade-1">
+                <div>
+                  <p class="first">Tartare de poulpe acidulé</p>
+                  <p class="second">Aux zests d'orange</p>
+                </div>
+                <div class="numb-button">
+                  <p class="number">25€</p>
+                  <button><i class="fa-solid fa-circle-check"></i></button>
+                </div>
               </div>
-              <div class="numb-button">
-                <p class="number">25€</p>
-                <button><i class="fa-solid fa-circle-check"></i></button>
+              <div class="plat-item fade-2">
+                <div>
+                  <p class="first">Velouté de légumes d'antan</p>
+                  <p class="second">Carotte, panais, topinambour</p>
+                </div>
+                <div class="numb-button">
+                  <p class="number">35€</p>
+                  <button class="sec-2">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="plat-item fade-3">
+                <div>
+                  <p class="first">Soupe à l'oignon</p>
+                  <p class="second">Revisitée</p>
+                </div>
+                <div class="numb-button">
+                  <p class="number">20€</p>
+                  <button class="sec-3">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="plat-item">
-              <div>
-                <p class="first">Velouté de légumes d'antan</p>
-                <p class="second">Carotte, panais, topinambour</p>
+          </section>
+          <section class="sec-2">
+            <h3 class="title-item">PLATS</h3>
+            <div class="plat-flex">
+              <div class="plat-item fade-1">
+                <div class="numb-button">
+                  <span class="placeholder">...</span>
+                  <p class="number">40€</p>
+                  <button><i class="fa-solid fa-circle-check"></i></button>
+                </div>
+                <div>
+                  <p class="first">Coquilles Saint-Jacques</p>
+                  <p class="second">
+                    Accompagnées d'une purée de pan<span class="hide">ais</span>
+                  </p>
+                </div>
               </div>
-              <div class="numb-button">
-                <p class="number">35€</p>
-                <button class="sec-2">
-                  <i class="fa-solid fa-circle-check"></i>
-                </button>
+              <div class="plat-item fade-2">
+                <div>
+                  <p class="first">Magret de canard</p>
+                  <p class="second">Et parmentier de pommes de terres</p>
+                </div>
+                <div class="numb-button">
+                  <p class="number">35€</p>
+                  <button class="sec-2">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="plat-item fade-3">
+                <div>
+                  <p class="first">Pigeonneau d'Ille-et-Vilaine</p>
+                  <p class="second">
+                    Sur son lit de gnocchis aux
+                    <span class="hide2">légumes</span>
+                  </p>
+                </div>
+                <div class="numb-button">
+                  <p class="number">44€</p>
+                  <button class="sec-3">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="plat-item">
-              <div>
-                <p class="first">Tartare de poulpe acidulé</p>
-                <p class="second">Aux zests d'orange</p>
+          </section>
+
+          <section class="desserts">
+            <h3 class="title-item">DESSERTS</h3>
+            <div class="plat-flex sec-3">
+              <div class="plat-item fade-1">
+                <div>
+                  <p class="first">Pétales de violettes gl<span>acés</span></p>
+                  <p class="second">Et purée de noisettes</p>
+                </div>
+                <div class="numb-button">
+                  <p class="number">18€</p>
+                  <button class="f-button">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </button>
+                </div>
               </div>
-              <div class="numb-button">
-                <p class="number">25€</p>
-                <button class="sec-3">
-                  <i class="fa-solid fa-circle-check"></i>
-                </button>
+              <div class="plat-item fade-2">
+                <div>
+                  <p class="first">Fondant au chocolat</p>
+                  <p class="second">Revisité</p>
+                </div>
+                <div class="numb-button">
+                  <p class="number">22€</p>
+                  <button class="sec-2">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="plat-item fade-3">
+                <div>
+                  <p class="first">Millefeuille croustillant</p>
+                  <p class="second">Myrtilles et pâte d'amande</p>
+                </div>
+                <div class="numb-button">
+                  <p class="number">23€</p>
+                  <button class="sec-3">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+        </div>
+
+        <section class="button">
+          <a href="#" class="btn_home">Commander</a>
         </section>
       </article>
     </main>
@@ -90,7 +183,7 @@
           </a>
         </li>
         <li><a href="#">Mentions légales</a></li>
-        <li><a href="ohmyfood@gmail.com"> Contact</a></li>
+        <li><a href="mailto:ohmyfood@gmail.com"> Contact</a></li>
       </ul>
     </footer>
   </body>

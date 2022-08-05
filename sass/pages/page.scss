@@ -111,7 +111,7 @@ img {
 }
 
 .fa-regular:hover {
-  color: #c269d6;
+  color: $primary-color;
   font-weight: 800;
 }
 
@@ -119,6 +119,85 @@ img {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+body,
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.parent-loader {
+  animation: fadeout 1s;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader {
+  position: absolute;
+  border: 20px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 20px solid $primary-color;
+  width: 100px;
+  height: 100px;
+  animation: loader 500ms linear infinite;
+  // animation-fill-mode: forwards;
+
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+header {
+  @include anim;
+}
+.reserve {
+  @include anim;
+}
+
+.zone_p1 {
+  @include anim;
+}
+
+.zone_p2 {
+  @include anim;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 //Media Queries

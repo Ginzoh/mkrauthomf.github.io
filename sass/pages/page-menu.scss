@@ -5,18 +5,27 @@ header {
     top: 8px;
     left: 20px;
     font-size: 20px;
+    color: black;
   }
 }
 
-main img {
-  width: 100%;
-  margin-bottom: -20px;
+main {
+  img {
+    width: 100%;
+    margin-bottom: -30px;
+    position: relative;
+  }
+  .note-img {
+    height: 250px;
+    object-fit: cover;
+  }
 }
 
 article {
   background-color: $back;
-  padding: 30px 20px;
-  border-radius: 20px 20px 0 0;
+  position: relative;
+  padding: 30px 10px;
+  border-radius: 30px 30px 0 0;
 
   h2 {
     @include title;
@@ -27,6 +36,10 @@ article {
   .fa-heart {
     font-size: 20px;
     align-self: center;
+    &:hover {
+      color: $primary-color;
+      font-weight: 800;
+    }
   }
 }
 
@@ -42,35 +55,14 @@ article {
   gap: 15px;
 }
 
-.plat-item {
-  background: white;
-  border-radius: 15px;
-  padding: 10px;
-  padding-right: 20px;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 5px 5px 7px $shadow;
-  .first {
-    font-weight: bold;
-    font-size: 18px;
-  }
-  .second {
-    font-weight: 400;
-    font-size: 15px;
-    margin-top: 5px;
-  }
-  .number {
-    font-weight: bold;
-    align-self: flex-end;
-  }
-}
-
 section {
   position: relative;
+  margin-bottom: 35px;
   .title-item {
     font-weight: 300;
-    font-size: 17px;
+    font-size: 19px;
     margin-bottom: 15px;
+    margin-left: 5px;
   }
   .title-item::after {
     content: "";
@@ -80,37 +72,353 @@ section {
     display: block;
     margin-top: 4px;
   }
+  .plat-item {
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 7px $shadow;
+    .first {
+      font-weight: bold;
+      font-size: 18px;
+      .placeholder {
+        display: none;
+      }
+    }
+    .second {
+      font-weight: 400;
+      font-size: 15px;
+      margin-top: 5px;
+      .placeholder {
+        display: none;
+      }
+    }
+    .number {
+      font-weight: bold;
+      align-self: flex-end;
+    }
+    &:hover {
+      .hide {
+        display: none;
+      }
+      .number {
+        margin-right: 50px;
+      }
+      .placeholder {
+        display: inline;
+      }
+      button {
+        width: 14%;
+        transform: scale(1);
+      }
+      i {
+        transform: rotate(2turn);
+      }
+    }
+    i {
+      transition: all 700ms;
+    }
+    .hide {
+      transition: all 700ms;
+    }
+  }
+
   .numb-button {
     display: flex;
+    order: 1;
     .number {
       font-size: 15px;
+      transition: all 700ms;
+      margin-left: 10px;
     }
-    &:hover > .number {
-      margin-right: 40px;
-    }
-    button {
+
+    .placeholder {
       display: none;
+      align-self: flex-end;
+    }
+    .placeholder2 {
+      display: inline;
+    }
+
+    button {
       position: absolute;
-      width: 14%;
+      width: 0%;
       background-color: $tertiary_color;
       border: none;
       border-radius: 0 15px 15px 0;
       color: white;
       font-size: 20px;
-      padding: 19px 13px;
+      padding: 23px 13px;
       top: 43px;
       right: 0px;
+      transform: scale(0);
+      transition: all 700ms;
     }
     .sec-2 {
-      top: 123px;
+      top: 122px;
     }
 
     .sec-3 {
-      top: 199px;
+      top: 200px;
+      padding: 21px 13px;
+    }
+  }
+}
+
+.button {
+  text-align: center;
+  a {
+    padding: 15px 45px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+.tab-flex {
+  .fade-1 {
+    animation: fadein 1s 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .fade-2 {
+    animation: fadein 1s 1.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .fade-3 {
+    animation: fadein 1s 1.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .fade-4 {
+    animation: fadein 1s 1.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    margin-bottom: -2px;
+  }
+  100% {
+    opacity: 1;
+    margin-bottom: 0px;
+  }
+}
+@keyframes fadein-2 {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+@keyframes fadein-3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein-3-bis {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein-4 {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+}
+
+// Media Queries
+
+@media (min-width: 768px) {
+  .head-heart {
+    i {
+      margin-right: 20px;
+    }
+  }
+  h1 {
+    font-size: 35px;
+  }
+  section {
+    .title-note {
+      margin-bottom: 33px;
+    }
+  }
+  .plat-note {
+    gap: 26px;
+  }
+  .plat-item {
+    width: 101%;
+    .first {
+      font-size: 19.5px;
+    }
+    .second {
+      font-size: 18px;
+    }
+  }
+  main {
+    img {
+      height: 401px;
+      object-fit: cover;
+    }
+  }
+  .tab-flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    .sec-1 {
+      width: 46%;
+    }
+  }
+
+  article {
+    padding: 30px 20px;
+    h2 {
+      font-size: 30px;
+    }
+    .sec-2 {
+      width: 49%;
+      button {
+        right: -4px;
+      }
+    }
+    section {
+      h2 {
+        font-size: 20px;
+      }
+      .numb-button {
+        button {
+          padding: 22px 13px;
+          top: 44px;
+          right: -6px;
+        }
+        .sec-2 {
+          right: -6px;
+          top: 122px;
+        }
+        .sec-3 {
+          padding: 22px 15px;
+        }
+      }
     }
 
-    &:hover > button {
-      display: inline;
+    .desserts {
+      padding: 0 170px;
+      margin-left: 20px;
+      width: 92%;
+      .plat-item {
+        .f-button {
+          top: 45px;
+          right: 164px;
+        }
+        .sec-2 {
+          top: 123px;
+          right: 164px;
+        }
+        .sec-3 {
+          top: 201px;
+          right: 164px;
+        }
+        &:hover {
+          .number {
+            margin-right: 50px;
+          }
+          button {
+            width: 9%;
+          }
+        }
+      }
     }
+    .dess-note {
+      width: 97%;
+    }
+  }
+  .button a {
+    padding: 17px 60px;
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 950px) {
+  article {
+    section {
+      .numb-button {
+        button {
+          top: 54px;
+        }
+        .sec-2 {
+          top: 132px;
+        }
+        .sec-3 {
+          top: 209px;
+        }
+      }
+
+      .plat-item:hover {
+        .hide {
+          display: inline;
+        }
+        .placeholder {
+          display: none;
+        }
+        .number {
+          margin-right: 50px;
+        }
+      }
+    }
+    .desserts {
+      width: 28%;
+      padding: 0 0;
+      margin-left: 0;
+      .numb-button {
+        .f-button {
+          top: 54px;
+          right: -2px;
+        }
+        .sec-2 {
+          top: 132px;
+          right: -2px;
+        }
+        .sec-3 {
+          top: 209px;
+          right: -2px;
+        }
+      }
+      .plat-item:hover {
+        button {
+          width: 15%;
+        }
+      }
+    }
+    .tab-flex {
+      justify-content: space-between;
+      .sec-1 {
+        width: 33%;
+      }
+      .title-item {
+        margin-bottom: 25px;
+      }
+    }
+    .sec-2 {
+      width: 32%;
+    }
+  }
+  .button {
+    padding-top: 30px;
   }
 }

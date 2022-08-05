@@ -15,5 +15,6 @@ $back: #f6f6f6;
   font-weight: 500;
 }
 
-@mixin button-hover($top, $bottom) {
+@mixin anim {
+  animation: fadein 1s step-end;
 }

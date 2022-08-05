@@ -22,7 +22,6 @@ a:link {
   -moz-border-radius: 40px;
   border-radius: 40px;
   color: #ffffff;
-  font-family: Open Sans;
   font-size: 20px;
   font-weight: 400;
   padding: 12px 24px;
@@ -33,7 +32,6 @@ a:link {
   text-align: center;
   margin-top: 20px;
 }
-
 .btn_home:hover {
   background: rgba(227, 112, 217, 0.9254901961);
   -webkit-border-radius: 40px;
@@ -272,7 +270,7 @@ img {
 }
 
 .fa-regular:hover {
-  color: #c269d6;
+  color: #9356dc;
   font-weight: 800;
 }
 
@@ -282,6 +280,84 @@ img {
   gap: 15px;
 }
 
+body,
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.parent-loader {
+  animation: fadeout 1s;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader {
+  position: absolute;
+  border: 20px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 20px solid #9356dc;
+  width: 100px;
+  height: 100px;
+  animation: loader 500ms linear infinite;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+header {
+  animation: fadein 1s step-end;
+}
+
+.reserve {
+  animation: fadein 1s step-end;
+}
+
+.zone_p1 {
+  animation: fadein 1s step-end;
+}
+
+.zone_p2 {
+  animation: fadein 1s step-end;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @media (min-width: 768px) {
   .zone_p1 h4 {
     margin-left: 0;
