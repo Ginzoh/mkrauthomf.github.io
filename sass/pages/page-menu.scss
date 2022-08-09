@@ -96,6 +96,8 @@ section {
       font-weight: 400;
       font-size: 15px;
       margin-top: 5px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       .placeholder {
         display: none;
       }

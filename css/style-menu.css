@@ -249,6 +249,8 @@ section .plat-item .second {
   font-weight: 400;
   font-size: 15px;
   margin-top: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 section .plat-item .second .placeholder {
   display: none;
