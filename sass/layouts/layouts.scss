@@ -8,7 +8,14 @@
 h1 {
   @include title;
 }
-
+footer {
+  .foot-title {
+    font-family: Shrikhand;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+}
 .footer {
   background-color: #353535;
   padding: 20px;

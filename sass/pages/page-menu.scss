@@ -120,10 +120,9 @@ section {
       }
       button {
         width: 14%;
-        transform: scale(1);
       }
       i {
-        transform: rotate(2turn);
+        transform: rotate(1turn);
       }
     }
 
@@ -135,7 +134,6 @@ section {
       transition: all 700ms;
     }
   }
-
   .numb-button {
     display: flex;
     order: 1;
@@ -157,15 +155,14 @@ section {
     button {
       position: absolute;
       width: 0%;
+      height: 24%;
       background-color: $tertiary_color;
       border: none;
       border-radius: 0 15px 15px 0;
       color: white;
       font-size: 20px;
-      padding: 23px 13px;
       top: 43px;
       right: 0px;
-      transform: scale(0);
       transition: all 700ms;
     }
 
@@ -175,7 +172,15 @@ section {
 
     .sec-3 {
       top: 200px;
-      padding: 21px 13px;
+    }
+
+    .sec-4 {
+      top: 274px;
+    }
+  }
+  .note-width {
+    button {
+      height: 19%;
     }
   }
 }
@@ -207,9 +212,39 @@ section {
     opacity: 0;
     animation-fill-mode: forwards;
   }
+  .fade-4-bis {
+    animation: fadein 1s 1.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
 
   .fade-4 {
-    animation: fadein 1s 1.6s;
+    animation: fadein 1s 2.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .fade-5 {
+    animation: fadein 1s 2.7s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .fade-6 {
+    animation: fadein 1s 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .fade-7 {
+    animation: fadein 1s 3.9s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .fade-8 {
+    animation: fadein 1s 4.1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .fade-9 {
+    animation: fadein 1s 4.3s;
     opacity: 0;
     animation-fill-mode: forwards;
   }
@@ -222,42 +257,6 @@ section {
   100% {
     opacity: 1;
     margin-bottom: 0px;
-  }
-}
-
-@keyframes fadein-2 {
-  0% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein-3 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein-3-bis {
-  0% {
-    opacity: 0;
-  }
-  85% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein-4 {
-  0% {
-    opacity: 0;
-  }
-  85% {
-    opacity: 1;
   }
 }
 
@@ -326,18 +325,30 @@ section {
       h2 {
         font-size: 20px;
       }
+
       .numb-button {
         button {
-          padding: 22px 13px;
-          top: 44px;
-          right: -6px;
+          top: 43px;
+          right: -2px;
         }
         .sec-2 {
-          right: -6px;
+          right: -2px;
           top: 122px;
         }
+      }
+      .plat-note {
+        button {
+          height: 19.5%;
+          top: 57px;
+          right: -2px;
+        }
+        .sec-2 {
+          right: -2px;
+          top: 149px;
+        }
         .sec-3 {
-          padding: 22px 15px;
+          top: 237px;
+          right: -2px;
         }
       }
     }
@@ -385,51 +396,78 @@ section {
     section {
       .numb-button {
         button {
-          top: 54px;
+          top: 50px;
+          right: -5px;
         }
 
         .sec-2 {
-          top: 132px;
+          top: 130px;
+          right: -5px;
+          height: 19%;
         }
 
         .sec-3 {
           top: 209px;
+        }
+        .sec-4 {
+          top: 286px;
         }
       }
 
       .plat-item:hover {
         .hide {
-          display: inline;
+          display: none;
         }
-
         .placeholder {
           display: none;
         }
-
         .number {
           margin-right: 50px;
         }
       }
     }
-
+    .fade-5 {
+      .numb-button {
+        .sec-2 {
+          top: 142px;
+          right: -5px;
+          height: 18.5%;
+        }
+      }
+    }
+    .fade-6 {
+      .numb-button {
+        .sec-3 {
+          top: 229px;
+          right: -4px;
+          height: 18.5%;
+        }
+      }
+    }
     .desserts {
       width: 28%;
       padding: 0 0;
       margin-left: 0;
+      .plat-flex {
+        gap: 26px;
+      }
       .numb-button {
+        button {
+          height: 18%;
+        }
         .f-button {
           top: 54px;
-          right: -2px;
+          right: -4px;
         }
 
         .sec-2 {
-          top: 132px;
-          right: -2px;
+          top: 144px;
+          right: -4px;
         }
 
         .sec-3 {
-          top: 209px;
-          right: -2px;
+          top: 232px;
+          right: -4px;
         }
       }
 
@@ -438,6 +476,9 @@ section {
           width: 15%;
         }
       }
+    }
+    .dess-note {
+      gap: 26px;
     }
 
     .tab-flex {
@@ -456,5 +497,31 @@ section {
   }
   .button {
     padding-top: 30px;
+  }
+  .standard {
+    .desserts {
+      .plat-flex {
+        gap: 15px;
+      }
+    }
+    section {
+      .numb-button {
+        button {
+          top: 52px;
+          right: -5px;
+          height: 24%;
+        }
+        .sec-2 {
+          top: 132px;
+          right: -5px;
+          height: 23.5%;
+        }
+        .sec-3 {
+          top: 209px;
+          right: -5px;
+          height: 24%;
+        }
+      }
+    }
   }
 }

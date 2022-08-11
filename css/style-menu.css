@@ -85,6 +85,13 @@ h1 {
   font-weight: 500;
 }
 
+footer .foot-title {
+  font-family: Shrikhand;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
 .footer {
   background-color: #353535;
   padding: 20px;
@@ -270,10 +277,9 @@ section .plat-item:hover .placeholder {
 }
 section .plat-item:hover button {
   width: 14%;
-  transform: scale(1);
 }
 section .plat-item:hover i {
-  transform: rotate(2turn);
+  transform: rotate(1turn);
 }
 section .plat-item i {
   transition: all 700ms;
@@ -300,15 +306,14 @@ section .numb-button .placeholder2 {
 section .numb-button button {
   position: absolute;
   width: 0%;
+  height: 24%;
   background-color: #99e2d0;
   border: none;
   border-radius: 0 15px 15px 0;
   color: white;
   font-size: 20px;
-  padding: 23px 13px;
   top: 43px;
   right: 0px;
-  transform: scale(0);
   transition: all 700ms;
 }
 section .numb-button .sec-2 {
@@ -316,7 +321,12 @@ section .numb-button .sec-2 {
 }
 section .numb-button .sec-3 {
   top: 200px;
-  padding: 21px 13px;
+}
+section .numb-button .sec-4 {
+  top: 274px;
+}
+section .note-width button {
+  height: 19%;
 }
 
 .button {
@@ -344,8 +354,38 @@ section .numb-button .sec-3 {
   opacity: 0;
   animation-fill-mode: forwards;
 }
-.tab-flex .fade-4 {
+.tab-flex .fade-4-bis {
   animation: fadein 1s 1.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.tab-flex .fade-4 {
+  animation: fadein 1s 2.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.tab-flex .fade-5 {
+  animation: fadein 1s 2.7s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.tab-flex .fade-6 {
+  animation: fadein 1s 3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.tab-flex .fade-7 {
+  animation: fadein 1s 3.9s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.tab-flex .fade-8 {
+  animation: fadein 1s 4.1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.tab-flex .fade-9 {
+  animation: fadein 1s 4.3s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
@@ -358,38 +398,6 @@ section .numb-button .sec-3 {
   100% {
     opacity: 1;
     margin-bottom: 0px;
-  }
-}
-@keyframes fadein-2 {
-  0% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-}
-@keyframes fadein-3 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadein-3-bis {
-  0% {
-    opacity: 0;
-  }
-  85% {
-    opacity: 1;
-  }
-}
-@keyframes fadein-4 {
-  0% {
-    opacity: 0;
-  }
-  85% {
-    opacity: 1;
   }
 }
 @media (min-width: 768px) {
@@ -442,16 +450,25 @@ section .numb-button .sec-3 {
     font-size: 20px;
   }
   article section .numb-button button {
-    padding: 22px 13px;
-    top: 44px;
-    right: -6px;
+    top: 43px;
+    right: -2px;
   }
   article section .numb-button .sec-2 {
-    right: -6px;
+    right: -2px;
     top: 122px;
   }
-  article section .numb-button .sec-3 {
-    padding: 22px 15px;
+  article section .plat-note button {
+    height: 19.5%;
+    top: 57px;
+    right: -2px;
+  }
+  article section .plat-note .sec-2 {
+    right: -2px;
+    top: 149px;
+  }
+  article section .plat-note .sec-3 {
+    top: 237px;
+    right: -2px;
   }
   article .desserts {
     padding: 0 170px;
@@ -486,16 +503,22 @@ section .numb-button .sec-3 {
 }
 @media (min-width: 950px) {
   article section .numb-button button {
-    top: 54px;
+    top: 50px;
+    right: -5px;
   }
   article section .numb-button .sec-2 {
-    top: 132px;
+    top: 130px;
+    right: -5px;
+    height: 19%;
   }
   article section .numb-button .sec-3 {
     top: 209px;
   }
+  article section .numb-button .sec-4 {
+    top: 286px;
+  }
   article section .plat-item:hover .hide {
-    display: inline;
+    display: none;
   }
   article section .plat-item:hover .placeholder {
     display: none;
@@ -503,25 +526,44 @@ section .numb-button .sec-3 {
   article section .plat-item:hover .number {
     margin-right: 50px;
   }
+  article .fade-5 .numb-button .sec-2 {
+    top: 142px;
+    right: -5px;
+    height: 18.5%;
+  }
+  article .fade-6 .numb-button .sec-3 {
+    top: 229px;
+    right: -4px;
+    height: 18.5%;
+  }
   article .desserts {
     width: 28%;
     padding: 0 0;
     margin-left: 0;
   }
+  article .desserts .plat-flex {
+    gap: 26px;
+  }
+  article .desserts .numb-button button {
+    height: 18%;
+  }
   article .desserts .numb-button .f-button {
     top: 54px;
-    right: -2px;
+    right: -4px;
   }
   article .desserts .numb-button .sec-2 {
-    top: 132px;
-    right: -2px;
+    top: 144px;
+    right: -4px;
   }
   article .desserts .numb-button .sec-3 {
-    top: 209px;
-    right: -2px;
+    top: 232px;
+    right: -4px;
   }
   article .desserts .plat-item:hover button {
     width: 15%;
+  }
+  article .dess-note {
+    gap: 26px;
   }
   article .tab-flex {
     justify-content: space-between;
@@ -537,6 +579,24 @@ section .numb-button .sec-3 {
   }
   .button {
     padding-top: 30px;
+  }
+  .standard .desserts .plat-flex {
+    gap: 15px;
+  }
+  .standard section .numb-button button {
+    top: 52px;
+    right: -5px;
+    height: 24%;
+  }
+  .standard section .numb-button .sec-2 {
+    top: 132px;
+    right: -5px;
+    height: 23.5%;
+  }
+  .standard section .numb-button .sec-3 {
+    top: 209px;
+    right: -5px;
+    height: 24%;
   }
 }
 
