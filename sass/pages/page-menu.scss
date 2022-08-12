@@ -73,6 +73,7 @@ section {
     background-color: $tertiary_color;
     display: block;
     margin-top: 4px;
+    margin-bottom: 25px;
   }
 
   .plat-item {
@@ -97,7 +98,6 @@ section {
       font-size: 15px;
       margin-top: 5px;
       text-overflow: ellipsis;
-      white-space: nowrap;
       .placeholder {
         display: none;
       }
@@ -123,11 +123,13 @@ section {
       }
       i {
         transform: rotate(1turn);
+        display: inline;
       }
     }
 
     i {
       transition: all 700ms;
+      display: none;
     }
 
     .hide {
@@ -195,6 +197,11 @@ section {
   }
 }
 .tab-flex {
+  .fade-0 {
+    animation: fadein 1s 0.8s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
   .fade-1 {
     animation: fadein 1s 1s;
     opacity: 0;
@@ -234,17 +241,27 @@ section {
     animation-fill-mode: forwards;
   }
   .fade-7 {
-    animation: fadein 1s 3.9s;
+    animation: fadein 1s 3.2s;
     opacity: 0;
     animation-fill-mode: forwards;
   }
   .fade-8 {
-    animation: fadein 1s 4.1s;
+    animation: fadein 1s 4s;
     opacity: 0;
     animation-fill-mode: forwards;
   }
   .fade-9 {
-    animation: fadein 1s 4.3s;
+    animation: fadein 1s 4.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .fade-10 {
+    animation: fadein 1s 4.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .fade-11 {
+    animation: fadein 1s 4.6s;
     opacity: 0;
     animation-fill-mode: forwards;
   }
@@ -416,7 +433,7 @@ section {
 
       .plat-item:hover {
         .hide {
-          display: none;
+          display: inline;
         }
         .placeholder {
           display: none;

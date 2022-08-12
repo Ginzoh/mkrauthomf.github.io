@@ -235,6 +235,7 @@ section .title-item::after {
   background-color: #99e2d0;
   display: block;
   margin-top: 4px;
+  margin-bottom: 25px;
 }
 section .plat-item {
   background: white;
@@ -257,7 +258,6 @@ section .plat-item .second {
   font-size: 15px;
   margin-top: 5px;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 section .plat-item .second .placeholder {
   display: none;
@@ -280,9 +280,11 @@ section .plat-item:hover button {
 }
 section .plat-item:hover i {
   transform: rotate(1turn);
+  display: inline;
 }
 section .plat-item i {
   transition: all 700ms;
+  display: none;
 }
 section .plat-item .hide {
   transition: all 700ms;
@@ -339,6 +341,11 @@ section .note-width button {
   font-size: 16px;
 }
 
+.tab-flex .fade-0 {
+  animation: fadein 1s 0.8s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
 .tab-flex .fade-1 {
   animation: fadein 1s 1s;
   opacity: 0;
@@ -375,17 +382,27 @@ section .note-width button {
   animation-fill-mode: forwards;
 }
 .tab-flex .fade-7 {
-  animation: fadein 1s 3.9s;
+  animation: fadein 1s 3.2s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
 .tab-flex .fade-8 {
-  animation: fadein 1s 4.1s;
+  animation: fadein 1s 4s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
 .tab-flex .fade-9 {
-  animation: fadein 1s 4.3s;
+  animation: fadein 1s 4.2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.tab-flex .fade-10 {
+  animation: fadein 1s 4.4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.tab-flex .fade-11 {
+  animation: fadein 1s 4.6s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
@@ -518,7 +535,7 @@ section .note-width button {
     top: 286px;
   }
   article section .plat-item:hover .hide {
-    display: none;
+    display: inline;
   }
   article section .plat-item:hover .placeholder {
     display: none;
