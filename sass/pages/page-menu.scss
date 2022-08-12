@@ -123,13 +123,14 @@ section {
       }
       i {
         transform: rotate(1turn);
-        display: inline;
+        opacity: 1;
       }
     }
-
     i {
-      transition: all 700ms;
-      display: none;
+      // width: 0%;
+      opacity: 0;
+      transition: ease-out opacity 2s, transform 1s;
+      // display: none;
     }
 
     .hide {

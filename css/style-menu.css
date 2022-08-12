@@ -280,11 +280,11 @@ section .plat-item:hover button {
 }
 section .plat-item:hover i {
   transform: rotate(1turn);
-  display: inline;
+  opacity: 1;
 }
 section .plat-item i {
-  transition: all 700ms;
-  display: none;
+  opacity: 0;
+  transition: ease-out opacity 2s, transform 1s;
 }
 section .plat-item .hide {
   transition: all 700ms;
