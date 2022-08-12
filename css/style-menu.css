@@ -284,7 +284,7 @@ section .plat-item:hover i {
 }
 section .plat-item i {
   opacity: 0;
-  transition: ease-out opacity 2s, transform 1s;
+  transition: cubic-bezier(0.01, 1.68, 0.99, 1.77) opacity 2s, transform 1s;
 }
 section .plat-item .hide {
   transition: all 700ms;

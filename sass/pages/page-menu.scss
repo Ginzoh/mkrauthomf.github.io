@@ -129,7 +129,7 @@ section {
     i {
       // width: 0%;
       opacity: 0;
-      transition: ease-out opacity 2s, transform 1s;
+      transition: cubic-bezier(0.01, 1.68, 0.99, 1.77) opacity 2s, transform 1s;
       // display: none;
     }
 
