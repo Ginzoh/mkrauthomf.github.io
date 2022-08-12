@@ -253,6 +253,16 @@ img {
   margin-bottom: 3px;
 }
 
+.menu-link .menu-link:link .menu-link:focus {
+  color: black;
+}
+.menu-link .menu-link:visited .menu-link:active {
+  color: black;
+}
+.menu-link .menu-link:hover {
+  color: rgba(45, 45, 45, 0.5529411765);
+}
+
 .rest-flex {
   display: flex;
   flex-direction: column;
@@ -428,6 +438,7 @@ header {
   }
   .first-title {
     font-size: 18px;
+    color: black;
   }
   span p:last-child {
     font-size: 18px;

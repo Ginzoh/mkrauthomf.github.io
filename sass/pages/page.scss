@@ -87,6 +87,17 @@ img {
   font-weight: 900;
   margin-bottom: 3px;
 }
+.menu-link {
+  .menu-link:link .menu-link:focus {
+    color: black;
+  }
+  .menu-link:visited .menu-link:active {
+    color: black;
+  }
+  .menu-link:hover {
+    color: #2d2d2d8d;
+  }
+}
 
 .rest-flex {
   display: flex;
@@ -271,6 +282,7 @@ header {
 
   .first-title {
     font-size: 18px;
+    color: black;
   }
 
   span {
