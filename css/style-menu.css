@@ -173,6 +173,9 @@ header .fa-arrow-left {
   color: black;
 }
 
+main {
+  overflow: hidden;
+}
 main img {
   width: 100%;
   margin-bottom: -30px;
@@ -235,7 +238,7 @@ section .title-item::after {
   background-color: #99e2d0;
   display: block;
   margin-top: 4px;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 section .plat-item {
   background: white;
@@ -524,9 +527,9 @@ section .note-width button {
     right: -5px;
   }
   article section .numb-button .sec-2 {
-    top: 145px;
+    top: 130px;
     right: -5px;
-    height: 17%;
+    height: 19%;
   }
   article section .numb-button .sec-3 {
     top: 209px;
@@ -599,6 +602,9 @@ section .note-width button {
   }
   .standard .desserts .plat-flex {
     gap: 15px;
+  }
+  .standard section .title-item::after {
+    margin-bottom: 25px;
   }
   .standard section .numb-button button {
     top: 52px;

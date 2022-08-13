@@ -10,6 +10,7 @@ header {
 }
 
 main {
+  overflow: hidden;
   img {
     width: 100%;
     margin-bottom: -30px;
@@ -73,7 +74,7 @@ section {
     background-color: $tertiary_color;
     display: block;
     margin-top: 4px;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
   }
 
   .plat-item {
@@ -419,9 +420,9 @@ section {
         }
 
         .sec-2 {
-          top: 145px;
+          top: 130px;
           right: -5px;
-          height: 17%;
+          height: 19%;
         }
 
         .sec-3 {
@@ -523,6 +524,9 @@ section {
       }
     }
     section {
+      .title-item::after {
+        margin-bottom: 25px;
+      }
       .numb-button {
         button {
           top: 52px;
