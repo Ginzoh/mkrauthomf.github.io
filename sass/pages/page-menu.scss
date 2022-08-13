@@ -11,6 +11,11 @@ header {
 
 main {
   overflow: hidden;
+  .non-standard {
+    .title-item::after {
+      margin-bottom: 25px;
+    }
+  }
   img {
     width: 100%;
     margin-bottom: -30px;
@@ -317,6 +322,18 @@ section {
       height: 401px;
       object-fit: cover;
     }
+    .non-standard {
+      .title-item::after {
+        margin-bottom: 14px;
+      }
+      .tab-flex {
+        .sec-2 {
+          .fade-4::after {
+            margin-bottom: 34px;
+          }
+        }
+      }
+    }
   }
 
   .tab-flex {
@@ -411,6 +428,32 @@ section {
 }
 
 @media (min-width: 950px) {
+  main {
+    .non-standard {
+      .tab-flex {
+        .sec-2 {
+          .title-item::after {
+            margin-bottom: 25px;
+          }
+
+          .numb-button {
+            .sec-2 {
+              top: 141px;
+              right: -5px;
+              height: 19%;
+            }
+            .sec-3 {
+              top: 228px;
+              right: -4px;
+            }
+          }
+        }
+      }
+      .title-item::after {
+        margin-bottom: 25px;
+      }
+    }
+  }
   article {
     section {
       .numb-button {
@@ -424,7 +467,6 @@ section {
           right: -5px;
           height: 19%;
         }
-
         .sec-3 {
           top: 209px;
         }

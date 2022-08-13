@@ -176,6 +176,9 @@ header .fa-arrow-left {
 main {
   overflow: hidden;
 }
+main .non-standard .title-item::after {
+  margin-bottom: 25px;
+}
 main img {
   width: 100%;
   margin-bottom: -30px;
@@ -446,6 +449,12 @@ section .note-width button {
     height: 401px;
     object-fit: cover;
   }
+  main .non-standard .title-item::after {
+    margin-bottom: 14px;
+  }
+  main .non-standard .tab-flex .sec-2 .fade-4::after {
+    margin-bottom: 34px;
+  }
   .tab-flex {
     display: flex;
     gap: 20px;
@@ -522,6 +531,21 @@ section .note-width button {
   }
 }
 @media (min-width: 950px) {
+  main .non-standard .tab-flex .sec-2 .title-item::after {
+    margin-bottom: 25px;
+  }
+  main .non-standard .tab-flex .sec-2 .numb-button .sec-2 {
+    top: 141px;
+    right: -5px;
+    height: 19%;
+  }
+  main .non-standard .tab-flex .sec-2 .numb-button .sec-3 {
+    top: 228px;
+    right: -4px;
+  }
+  main .non-standard .title-item::after {
+    margin-bottom: 25px;
+  }
   article section .numb-button button {
     top: 50px;
     right: -5px;
