@@ -130,12 +130,14 @@ section {
       i {
         transform: rotate(1turn);
         opacity: 1;
+        animation-fill-mode: forwards;
       }
     }
     i {
       // width: 0%;
       opacity: 0;
-      transition: cubic-bezier(0.01, 1.68, 0.99, 1.77) opacity 2s, transform 1s;
+      // transition: cubic-bezier(0.01, 1.68, 0.99, 1.77) opacity 2s, transform 1s;
+      transition: opacity 500ms, transform 1s;
       // display: none;
     }
 
@@ -451,6 +453,18 @@ section {
       }
       .title-item::after {
         margin-bottom: 25px;
+      }
+    }
+  }
+  .non-standard {
+    .sec-3 {
+      .plat-item:hover {
+        .hide {
+          display: none;
+        }
+        .placeholder {
+          display: inline;
+        }
       }
     }
   }

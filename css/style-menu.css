@@ -287,10 +287,11 @@ section .plat-item:hover button {
 section .plat-item:hover i {
   transform: rotate(1turn);
   opacity: 1;
+  animation-fill-mode: forwards;
 }
 section .plat-item i {
   opacity: 0;
-  transition: cubic-bezier(0.01, 1.68, 0.99, 1.77) opacity 2s, transform 1s;
+  transition: opacity 500ms, transform 1s;
 }
 section .plat-item .hide {
   transition: all 700ms;
@@ -545,6 +546,12 @@ section .note-width button {
   }
   main .non-standard .title-item::after {
     margin-bottom: 25px;
+  }
+  .non-standard .sec-3 .plat-item:hover .hide {
+    display: none;
+  }
+  .non-standard .sec-3 .plat-item:hover .placeholder {
+    display: inline;
   }
   article section .numb-button button {
     top: 50px;
