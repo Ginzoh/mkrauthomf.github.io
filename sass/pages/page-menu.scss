@@ -83,20 +83,30 @@ section {
   }
 
   .plat-item {
+    div:not(.numb-button) {
+      width: 70%;
+      padding-left: 10px;
+      padding-top: 7px;
+    }
+    div.numb-button {
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+    }
     background: white;
     border-radius: 15px;
-    padding: 10px;
-    padding-right: 20px;
     display: flex;
     justify-content: space-between;
     box-shadow: 5px 5px 7px $shadow;
+    overflow: hidden;
 
     .first {
       font-weight: bold;
       font-size: 18px;
-      .placeholder {
-        display: none;
-      }
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
 
     .second {
@@ -104,9 +114,8 @@ section {
       font-size: 15px;
       margin-top: 5px;
       text-overflow: ellipsis;
-      .placeholder {
-        display: none;
-      }
+      overflow: hidden;
+      white-space: nowrap;
     }
 
     .number {
@@ -115,17 +124,12 @@ section {
     }
 
     &:hover {
-      .hide {
-        display: none;
-      }
       .number {
         margin-right: 50px;
       }
-      .placeholder {
-        display: inline;
-      }
       button {
-        width: 14%;
+        width: 50%;
+        right: 0;
       }
       i {
         transform: rotate(1turn);
@@ -134,15 +138,8 @@ section {
       }
     }
     i {
-      // width: 0%;
       opacity: 0;
-      // transition: cubic-bezier(0.01, 1.68, 0.99, 1.77) opacity 2s, transform 1s;
       transition: opacity 500ms, transform 1s;
-      // display: none;
-    }
-
-    .hide {
-      transition: all 700ms;
     }
   }
   .numb-button {
@@ -151,47 +148,22 @@ section {
     .number {
       font-size: 15px;
       transition: all 700ms;
-      margin-left: 10px;
-    }
-
-    .placeholder {
-      display: none;
-      align-self: flex-end;
-    }
-
-    .placeholder2 {
-      display: inline;
+      padding: 10px;
     }
 
     button {
       position: absolute;
-      width: 0%;
-      height: 24%;
+      width: 55px;
+      // height: 24%;
       background-color: $tertiary_color;
       border: none;
       border-radius: 0 15px 15px 0;
       color: white;
       font-size: 20px;
-      top: 43px;
-      right: 0px;
+      top: 0px;
+      right: -60px;
       transition: all 700ms;
-    }
-
-    .sec-2 {
-      top: 122px;
-    }
-
-    .sec-3 {
-      top: 200px;
-    }
-
-    .sec-4 {
-      top: 274px;
-    }
-  }
-  .note-width {
-    button {
-      height: 19%;
+      height: 100%;
     }
   }
 }
@@ -310,7 +282,7 @@ section {
   }
 
   .plat-item {
-    width: 101%;
+    width: 100%;
     .first {
       font-size: 19.5px;
     }
@@ -354,40 +326,11 @@ section {
     }
     .sec-2 {
       width: 49%;
-      button {
-        right: -4px;
-      }
     }
 
     section {
       h2 {
         font-size: 20px;
-      }
-
-      .numb-button {
-        button {
-          top: 43px;
-          right: -2px;
-        }
-        .sec-2 {
-          right: -2px;
-          top: 122px;
-        }
-      }
-      .plat-note {
-        button {
-          height: 19.5%;
-          top: 57px;
-          right: -2px;
-        }
-        .sec-2 {
-          right: -2px;
-          top: 149px;
-        }
-        .sec-3 {
-          top: 237px;
-          right: -2px;
-        }
       }
     }
 
@@ -396,24 +339,9 @@ section {
       margin-left: 20px;
       width: 92%;
       .plat-item {
-        .f-button {
-          top: 45px;
-          right: 164px;
-        }
-        .sec-2 {
-          top: 123px;
-          right: 164px;
-        }
-        .sec-3 {
-          top: 201px;
-          right: 164px;
-        }
         &:hover {
           .number {
             margin-right: 50px;
-          }
-          button {
-            width: 9%;
           }
         }
       }
@@ -437,18 +365,6 @@ section {
           .title-item::after {
             margin-bottom: 25px;
           }
-
-          .numb-button {
-            .sec-2 {
-              top: 141px;
-              right: -5px;
-              height: 19%;
-            }
-            .sec-3 {
-              top: 228px;
-              right: -4px;
-            }
-          }
         }
       }
       .title-item::after {
@@ -456,66 +372,11 @@ section {
       }
     }
   }
-  .non-standard {
-    .sec-3 {
-      .plat-item:hover {
-        .hide {
-          display: none;
-        }
-        .placeholder {
-          display: inline;
-        }
-      }
-    }
-  }
   article {
     section {
-      .numb-button {
-        button {
-          top: 50px;
-          right: -5px;
-        }
-
-        .sec-2 {
-          top: 130px;
-          right: -5px;
-          height: 19%;
-        }
-        .sec-3 {
-          top: 209px;
-        }
-        .sec-4 {
-          top: 286px;
-        }
-      }
-
       .plat-item:hover {
-        .hide {
-          display: inline;
-        }
-        .placeholder {
-          display: none;
-        }
         .number {
           margin-right: 50px;
-        }
-      }
-    }
-    .fade-5 {
-      .numb-button {
-        .sec-2 {
-          top: 142px;
-          right: -5px;
-          height: 18.5%;
-        }
-      }
-    }
-    .fade-6 {
-      .numb-button {
-        .sec-3 {
-          top: 229px;
-          right: -4px;
-          height: 18.5%;
         }
       }
     }
@@ -525,31 +386,6 @@ section {
       margin-left: 0;
       .plat-flex {
         gap: 26px;
-      }
-      .numb-button {
-        button {
-          height: 18%;
-        }
-        .f-button {
-          top: 54px;
-          right: -4px;
-        }
-
-        .sec-2 {
-          top: 144px;
-          right: -4px;
-        }
-
-        .sec-3 {
-          top: 232px;
-          right: -4px;
-        }
-      }
-
-      .plat-item:hover {
-        button {
-          width: 15%;
-        }
       }
     }
     .dess-note {
@@ -582,23 +418,6 @@ section {
     section {
       .title-item::after {
         margin-bottom: 25px;
-      }
-      .numb-button {
-        button {
-          top: 52px;
-          right: -5px;
-          height: 24%;
-        }
-        .sec-2 {
-          top: 132px;
-          right: -5px;
-          height: 23.5%;
-        }
-        .sec-3 {
-          top: 209px;
-          right: -5px;
-          height: 24%;
-        }
       }
     }
   }
